@@ -1,14 +1,24 @@
 {
-  "version": 8,
-  "sources": {
-    "gsi": {
-      "type": "vector",
-      "tiles": [
-        "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
-      ],
-      "minzoom": 0,
-      "maxzoom": 20
-    }
-  }
-  ]
+  "tilejson": "3.0.0",
+  "name": "GSI Experimental Binary Vector Map",
+  "id": "gsi-bvmap",
+  "version": "1.0.0",
+  "description": "国土地理院 ベクトルタイル提供実験",
+  "attribution": "© 国土地理院",
+  "scheme": "xyz",
+
+  /* --- タイル URL --- */
+  "tiles": [
+    "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
+  ],
+
+  /* --- ズーム設定 --- */
+  "minzoom": 5,
+  "maxzoom": 17,
+  "fillzoom": 14,   /* ← 縮小時も Z14 まで取得して描画 */
+
+  /* --- 参考情報（任意） --- */
+  "bounds": [-180, -85, 180, 85],
+  "center": [139.6916, 35.6895, 10],
+  "crs": "EPSG:3857"
 }
