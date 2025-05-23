@@ -6,40 +6,9 @@
       "tiles": [
         "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
       ],
-      "minzoom": 5,
-      "maxzoom": 17
+      "minzoom": 0,
+      "maxzoom": 20
     }
-  },
-  "layers": [
-    {
-      "id": "road",
-      "type": "line",
-      "source": "gsi",
-      "source-layer": "road",
-      "paint": {
-        "line-color": "#d7191c",
-        "line-width": 2
-      }
-    },
-    {
-      "id": "railway",
-      "type": "line",
-      "source": "gsi",
-      "source-layer": "railway",
-      "paint": {
-        "line-color": "#2c7bb6",
-        "line-width": 1.5
-      }
-    },
-    {
-      "id": "river",
-      "type": "line",
-      "source": "gsi",
-      "source-layer": "river",
-      "paint": {
-        "line-color": "#2ca25f",
-        "line-width": 1.5
-      }
-    }
+  }
   ]
 }
