@@ -7,17 +7,14 @@
   "attribution": "© 国土地理院",
   "scheme": "xyz",
 
-  /* --- タイル URL --- */
   "tiles": [
     "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
   ],
 
-  /* --- ズーム設定 --- */
   "minzoom": 5,
   "maxzoom": 17,
-  "fillzoom": 14,   /* ← 縮小時も Z14 まで取得して描画 */
+  "fillzoom": 14,
 
-  /* --- 参考情報（任意） --- */
   "bounds": [-180, -85, 180, 85],
   "center": [139.6916, 35.6895, 10],
   "crs": "EPSG:3857"
